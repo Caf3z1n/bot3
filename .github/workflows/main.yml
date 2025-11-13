@@ -49,5 +49,5 @@ jobs:
             cd ~/bot3
             yarn
             yarn sequelize db:migrate
-#pm2 restart bot3
-#pm2 restart api-bot3
+            pm2 restart bot3
+            pm2 restart api-bot3

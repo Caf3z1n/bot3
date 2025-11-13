@@ -5,7 +5,7 @@ module.exports = {
 
     if (symbols.length === 0) {
       throw new Error(
-        '[seed:strategy-assets] Nenhum simbolo configurado em BOT2_SYMBOLS'
+        '[seed:strategy-assets] Nenhum simbolo configurado em BOT3_SYMBOLS'
       );
     }
 
