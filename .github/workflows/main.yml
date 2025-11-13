@@ -35,7 +35,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           source: ".,!node_modules"
-          target: "bot2"
+          target: "bot3
 
       # Rodar scripts de produção no servidor da Digital Ocean
       - name: Run production scripts on Digital Ocean
@@ -46,8 +46,8 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd ~/bot2
+            cd ~/bot3
             yarn
             yarn sequelize db:migrate
-            pm2 restart bot2
-            pm2 restart api-bot2
+#pm2 restart bot3
+#pm2 restart api-bot3
